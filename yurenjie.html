@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>愚人节玩笑</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        .container {
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+            max-width: 600px;
+            margin: 20px;
+        }
+        .container:hover {
+            transform: translateY(-10px);
+        }
+        .text {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 25px;
+            line-height: 1.6;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            margin: 20px 0;
+        }
+        .image:hover {
+            transform: scale(1.05);
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .date {
+            font-size: 18px;
+            color: #666;
+            margin-top: 15px;
+            font-style: italic;
+        }
+        .warning {
+            color: #ff4444;
+            font-size: 20px;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid #ff4444;
+            border-radius: 8px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            如果你好在四月一号整我，<br>
+            那么我就在四月四号给你烧纸
+        </div>
+        <img src="https://你的域名/微信图片_20250331224647.jpg" width="90%" height="90%" class="image">
+        
+        </div>
+</body>
+</html> 
